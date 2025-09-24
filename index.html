@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Herramienta Avanzada de Detección de Deepfakes</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f7fa;
+      color: #222;
+    }
+    header {
+      background-color: #0d1b2a;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header nav a {
+      color: white;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background-color: #1b263b;
+      color: white;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .upload-area {
+      border: 2px dashed #ccc;
+      border-radius: 10px;
+      padding: 2rem;
+      margin: 0 auto;
+      width: 80%;
+      max-width: 500px;
+      background-color: #fff;
+      color: #555;
+    }
+    .upload-area:hover {
+      border-color: #1f7a8c;
+    }
+    .results {
+      display: flex;
+      gap: 2rem;
+      padding: 3rem;
+    }
+    .card {
+      flex: 1;
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .veredicto {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    .veredicto.real {
+      color: green;
+    }
+    .veredicto.fake {
+      color: red;
+    }
+    footer {
+      background-color: #0d1b2a;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Deepfake Detector</div>
+    <nav>
+      <a href="#">Sobre el Proyecto</a>
+      <a href="#">Tecnología Utilizada</a>
+      <a href="#">Limitaciones</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Herramienta Avanzada de Detección de Deepfakes</h1>
+    <p>Utilizamos modelos de IA con explicabilidad (XAI) para analizar, detectar y visualizar manipulaciones en imágenes y videos.</p>
+    <div class="upload-area">
+      <p><strong>Arrastra y suelta</strong> una imagen o video aquí</p>
+      <p>o</p>
+      <button>Seleccionar Archivo</button>
+      <p style="font-size:0.8rem; color:#777;">Formatos soportados: JPG, PNG, MP4 | Tamaño máximo: 100MB</p>
+    </div>
+  </section>
+
+  <section class="results">
+    <div class="card">
+      <h2>Resultado Principal</h2>
+      <img src="https://via.placeholder.com/300" alt="Fotograma analizado" style="width:100%; border-radius:8px; margin-bottom:1rem;">
+      <div class="veredicto fake">DEEPFAKE DETECTADO</div>
+      <p>Confianza del modelo: <strong>92.4%</strong></p>
+    </div>
+    <div class="card">
+      <h2>Análisis Detallado</h2>
+      <p><strong>Explicación Visual (XAI):</strong></p>
+      <img src="https://via.placeholder.com/300/ffaaaa/000000?text=Heatmap" alt="Heatmap" style="width:100%; border-radius:8px; margin-bottom:1rem;">
+      <p><strong>Análisis Forense:</strong></p>
+      <ul>
+        <li>Frecuencia: anomalías detectadas</li>
+        <li>Estadística: coeficientes no coinciden con patrón real</li>
+      </ul>
+      <p><strong>Modelo:</strong> Ensamble Xception + EfficientNet</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Esta herramienta es de apoyo. Los resultados no son prueba concluyente y requieren validación experta.</p>
+  </footer>
+</body>
+</html>
